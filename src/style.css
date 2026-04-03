@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #8b5cf6;
+  --color-primary-dark: #6d28d9;
+  --color-secondary: #06b6d4;
+  --color-dark-bg: #0f172a;
+  --color-dark-surface: #1e293b;
+}
+
+/* --- Premium Tech Scrollbar --- */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #8b5cf633, #06b6d433);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #8b5cf6, #06b6d4);
+  box-shadow: 0 0 10px rgba(139, 92, 246, 0.4);
+}
+
+/* --- Global Transitions --- */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #8b5cf633 transparent;
+}
+
+/* --- Active Pulsing Animation --- */
+@keyframes activePulse {
+  0% { box-shadow: 0 0 0px rgba(139, 92, 246, 0); }
+  50% { box-shadow: 0 0 20px rgba(139, 92, 246, 0.3); }
+  100% { box-shadow: 0 0 0px rgba(139, 92, 246, 0); }
+}
+
+.active-track-glow {
+  animation: activePulse 3s infinite ease-in-out;
+  border-color: rgba(139, 92, 246, 0.4) !important;
+}
+
+/* --- Glassmorphism Overrides --- */
+.glass-panel {
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+body {
+    background-color: var(--color-dark-bg);
+    color: #f8fafc;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
