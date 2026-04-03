@@ -72,5 +72,5 @@ Stay ahead of the curve with real-time trending English and Tamil music charts, 
 ---
 
 <p align="center">
-  Built with ❤️ for the future of music streaming.
+  Built For My fellow Music Lovers And JD fans!✨💯
 </p>
